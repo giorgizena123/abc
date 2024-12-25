@@ -1,4 +1,13 @@
-package PACKAGE_NAME;
+abstract class Toy {
+    protected String name;
+    protected double additionalCost;
 
-public class Toy {
+
+    public Toy(String name, double additionalCost) {
+        this.name = name;
+        this.additionalCost = additionalCost;
+    }
+
+
+    public abstract double calculatePrice();
 }
