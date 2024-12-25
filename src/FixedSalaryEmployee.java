@@ -1,4 +1,14 @@
-package PACKAGE_NAME;
+class FixedSalaryEmployee extends Employee {
+    private double salary;
 
-public class FixedSalaryEmployee {
+
+    public FixedSalaryEmployee(String firstName, String lastName, String phoneNumber, double salary) {
+        super(firstName, lastName, phoneNumber);
+        this.salary = salary;
+    }
+
+    @Override
+    public double calculateSalary() {
+        return salary;
+    }
 }
