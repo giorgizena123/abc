@@ -1,4 +1,22 @@
-package PACKAGE_NAME;
+class Triangle extends Shape {
+    private double z;
 
-public class Triangle {
+
+    public Triangle(double x, double y, double z, String name) {
+        super(x, y, name);
+        this.z = z;
+    }
+
+
+    @Override
+    public void printDetails() {
+        super.printDetails();
+        System.out.println("z: " + z);
+    }
+
+
+    @Override
+    public double perimeter() {
+        return x + y + z;
+    }
 }
