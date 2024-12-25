@@ -4,7 +4,7 @@ interface Drivable {
     void stopEngine();
 }
 
-// მეორე ინტერფეისი - Steerable
+
 interface Steerable {
     void turnLeft();
     void turnRight();
