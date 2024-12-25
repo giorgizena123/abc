@@ -1,4 +1,16 @@
-package PACKAGE_NAME;
+import java.util.Scanner;
 
-public class RegularPolygon {
+class RegularPolygon {
+    protected int sides;
+    protected double length;
+
+
+    public RegularPolygon(int sides, double length) {
+        this.sides = sides;
+        this.length = length;
+    }
+
+    public double perimeter() {
+        return sides * length;
+    }
 }
